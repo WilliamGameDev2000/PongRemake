@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.11.4)
-project(Pong)
+project(PongRemake)
 set(GAMEDATA_FOLDER "data")
 set(ENABLE_ENET  OFF  CACHE BOOL "Adds Networking"   FORCE)
 set(ENABLE_SOUND ON   CACHE BOOL "Adds SoLoud Audio" FORCE)
@@ -19,7 +19,7 @@ set(SOURCE_FILES
         "game/game.cpp")
 
 set(HEADER_FILES
-        "game/game.h" game/Vector.cpp game/Vector.h game/Ball.cpp game/Ball.hpp)
+        "game/game.h" game/Vector.cpp game/Vector.h game/Ball.cpp game/Ball.hpp game/Sprites.cpp game/Sprites.hpp game/Paddle.cpp game/Paddle.hpp)
 
 ## the executable
 add_executable(${PROJECT_NAME} ${HEADER_FILES} ${SOURCE_FILES})
